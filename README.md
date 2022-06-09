@@ -1,12 +1,12 @@
-# flux2-multi-tenancy
+# flux2-mt
 
-[![test](https://github.com/fluxcd/flux2-multi-tenancy/workflows/test/badge.svg)](https://github.com/fluxcd/flux2-multi-tenancy/actions)
-[![e2e](https://github.com/fluxcd/flux2-multi-tenancy/workflows/e2e/badge.svg)](https://github.com/fluxcd/flux2-multi-tenancy/actions)
-[![license](https://img.shields.io/github/license/fluxcd/flux2-multi-tenancy.svg)](https://github.com/fluxcd/flux2-multi-tenancy/blob/main/LICENSE)
+[![test](https://github.com/fluxcd/flux2-mt/workflows/test/badge.svg)](https://github.com/fluxcd/flux2-mt/actions)
+[![e2e](https://github.com/fluxcd/flux2-mt/workflows/e2e/badge.svg)](https://github.com/fluxcd/flux2-mt/actions)
+[![license](https://img.shields.io/github/license/fluxcd/flux2-mt.svg)](https://github.com/fluxcd/flux2-mt/blob/main/LICENSE)
 
 This repository serves as a starting point for managing multi-tenant clusters with Git and Flux v2.
 
-![](docs/img/flux2-multi-tenancy.png)
+![](docs/img/flux2-mt.png)
 
 ## Roles
 
@@ -27,7 +27,7 @@ This repository serves as a starting point for managing multi-tenant clusters wi
 
 ## Repository structure
 
-The [platform admin repository](https://github.com/fluxcd/flux2-multi-tenancy/tree/main) contains the following top directories:
+The [platform admin repository](https://github.com/fluxcd/flux2-mt/tree/main) contains the following top directories:
 
 - **clusters** dir contains the Flux configuration per cluster
 - **infrastructure** dir contains common infra tools such as admission controllers, CRDs and cluster-wide polices
@@ -46,7 +46,7 @@ The [platform admin repository](https://github.com/fluxcd/flux2-multi-tenancy/tr
     └── staging
 ```
 
-A [tenant repository](https://github.com/fluxcd/flux2-multi-tenancy/tree/dev-team) contains the following top directories:
+A [tenant repository](https://github.com/fluxcd/flux2-mt/tree/dev-team) contains the following top directories:
 
 - **base** dir contains `HelmRepository` and `HelmRelease` manifests
 - **staging** dir contains `HelmRelease` Kustomize patches for deploying pre-releases on the staging cluster
